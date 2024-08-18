@@ -122,14 +122,20 @@ body{
             }
         }
         
+        footer{
+            padding-top: 8vh;
+            #redes{
+                a{
+                    img{width: 2.5vw;}
+                }
+            }
+            #direitos{
+                display: flex;
+                justify-content: center;
+                color: white;
+            }    
+        }
     }
-
-
-
-
-    footer{
-        grid-column: 1/span 4;
-        grid-row: 6;
-    }
+    
 
 }
