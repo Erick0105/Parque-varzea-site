@@ -105,36 +105,24 @@ body{
                         padding-top: 2vh;
                         font-size: 2.2vw;
                     }
-
-                }
-                #btns{
-                    width: 50vw;
-                    padding-bottom: 5vh;
-                    display: flex;
-                    justify-content: space-around;
-                    a{
-                        border-radius: 0.2vw;
-                        background-color: #ECF39E;
-                        padding: 0.5vw;
-                        box-shadow: 0.5vw 0.7vh 0 0 #132A13;
-                    }
                 }
             }
         }
-        
-        footer{
-            padding-top: 8vh;
-            #redes{
-                a{
-                    img{width: 2.5vw;}
-                }
+    }
+    footer{
+        grid-column: 1/5;
+        background-color: #4f772d;
+        padding-top: 8vh;
+        #redes{
+            a{
+                img{width: 2.5vw;}
             }
-            #direitos{
-                display: flex;
-                justify-content: center;
-                color: white;
-            }    
         }
+        #direitos{
+            display: flex;
+            justify-content: center;
+            color: white;
+        }    
     }
     
 
