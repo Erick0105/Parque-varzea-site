@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-rows: 12vh 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -13,11 +13,10 @@ main{
     grid-column: 1/5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 2vw; 
+    font-size: 2vw;
     #main1{
-        grid-row: 1;
         grid-column: 1/6;
-        padding-top: 1vw;
+        padding-top: 5vh;
         background: linear-gradient(to bottom,#90a955, #132a13 );
         border-bottom: 0.5vw solid #ECF39E;
         display: grid;
