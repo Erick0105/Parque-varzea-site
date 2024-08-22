@@ -11,7 +11,8 @@ header{
     justify-content: space-evenly;
     #titulo{
         p{
-            font-size: 1.2vw;
+            font-size: 1vw;
+            
         }
     }
     nav{
@@ -33,7 +34,7 @@ header{
 
 footer{
     background-color: #90A955;
-    padding-top: 8vh;
+    padding-top: 4vh;
     #redes{
         a{
             img{width: 2.5vw;}
