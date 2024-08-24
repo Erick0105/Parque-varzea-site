@@ -2,9 +2,9 @@ let agora = new Date();
 let hora = agora.getHours();
 let msg;
 
-if (hora => 18){
+if (hora > 18){
     msg = "Boa noite";
-}else if (hora => 13){
+}else if (hora > 13){
     msg = "Boa tarde";
 }else{
     msg = "Bom dia";

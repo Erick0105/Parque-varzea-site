@@ -1,0 +1,136 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 12vh 1fr;
+    header{
+        grid-column: 1/5;
+        border-bottom: 0.1vw solid black;
+    }
+    main{
+        grid-column: 1/5;
+        font-size: 2vw;
+        #main1{
+            display: flex;
+            flex-direction: column;
+            padding-top: 5vh;
+            padding-bottom: 6vh;
+            background: linear-gradient(to bottom,#90a955, #132a13 );
+            border-bottom: 0.5vw solid #ECF39E;
+            #titulo {
+                align-self: flex-start;
+                width: max-content;
+                display: flex;
+                align-items: center;
+                padding: 1.5vw;
+                padding-right: 6vw;
+                color: #ECF39E;
+                background-color: #132a13;
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%);
+            }
+            #intro{
+                margin-top: 15vh;
+                font-size: 0.75em;
+                width: 35vw;
+                align-self: self-end;
+                padding: 2vw;
+                border-radius: 5%;
+                background-color: #31572C;
+                color: #ECF39E;
+            }
+        }
+        #mainBaixo{
+            padding-top: 10vh;
+            background: linear-gradient(to bottom,#132a13,#31572C,#4F772D ,#90a955);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            .caixas{
+                background-color: #90a95580;
+                margin-top: 10vh;
+                position: relative;
+                color: #ECF39E;
+                border-bottom: 0.25vw solid #ECF39E;
+                img{
+                    width: 30vw;
+                    padding: 1vw;
+                }
+                .txt{
+                    position: absolute;
+                    top: 1vw;
+                    background-color: #132a13;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        font-size: 0.75em;
+                        color: white;
+                    }
+                    li{
+                        font-size: 0.75em;
+                        color: white;
+                    }
+                }
+                
+            }
+            .esquerda{
+                grid-column: 1/5;
+                margin-right: 8vw;
+                .txt{
+                    left: 25vw;
+                    top: 5vh;
+                    padding-left: 10vw;
+                    clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%);
+                }
+            }
+            .direita{
+                grid-column: 2/6;
+                margin-left: 8vw;
+                display: flex;
+                justify-content: end;
+                .txt{
+                    padding-left: 2vw;
+                    top:2.5vw;
+                    right: 25vw;
+                    padding-right: 10vw;
+                    clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 50%);
+                }
+                img{
+                    position: relative;
+                }
+            }
+            #Extras{
+                padding-top: 15vh;
+                grid-column: 2/5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .subtitulo{
+                    background-color: #ECF39E;
+                    width: max-content;
+                    padding: 3vw;   
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                }
+                #txtExtra{
+                    margin-top: 5vh;
+                    background-color: #132a13;
+                    border: #90a955 solid 1vw;
+                    border-radius: 5%;
+                    color: white;
+                    p{
+                        padding: 2vw;
+                    }
+                }
+            }
+
+
+        }
+    }
+    footer{
+        grid-column: 1/5;
+    }
+
+}
+
