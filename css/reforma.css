@@ -41,63 +41,144 @@ body{
             padding-top: 10vh;
             background: linear-gradient(to bottom,#132a13,#31572C,#4F772D ,#90a955);
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            .caixas{
-                background-color: #90a95580;
-                margin-top: 10vh;
-                position: relative;
-                color: #ECF39E;
-                border-bottom: 0.25vw solid #ECF39E;
-                img{
-                    width: 30vw;
-                    padding: 1vw;
-                }
-                .txt{
-                    position: absolute;
-                    top: 1vw;
-                    background-color: #132a13;
-                    height: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    p{
-                        font-size: 0.75em;
-                        color: white;
-                    }
-                    li{
-                        font-size: 0.75em;
-                        color: white;
-                    }
-                }
-                
-            }
-            .esquerda{
-                grid-column: 1/5;
-                margin-right: 8vw;
-                .txt{
-                    left: 25vw;
-                    top: 5vh;
-                    padding-left: 10vw;
-                    clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%);
-                }
-            }
-            .direita{
-                grid-column: 2/6;
-                margin-left: 8vw;
-                display: flex;
-                justify-content: end;
-                .txt{
-                    padding-left: 2vw;
-                    top:2.5vw;
-                    right: 25vw;
-                    padding-right: 10vw;
-                    clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 50%);
-                }
-                img{
+            grid-template-rows: 1fr 0.75fr;
+            #informacoes{
+                grid-row: 1;    
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                .caixas{
+                    background-color: #90a95580;
+                    margin-top: 10vh;
                     position: relative;
+                    color: #ECF39E;
+                    border-bottom: 0.25vw solid #ECF39E;
+                    img{
+                        width: 30vw;
+                        padding: 1vw;
+                    }
+                    .txt{
+                        position: absolute;
+                        top: 1vw;
+                        background-color: #132a13;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        p{
+                            font-size: 0.75em;
+                            color: white;
+                        }
+                        li{
+                            font-size: 0.75em;
+                            color: white;
+                        }
+                    }
+                    
+                }
+                .esquerda{
+                    grid-column: 1/5;
+                    margin-right: 10vw;
+                    .txt{
+                        left: 25vw;
+                        top: 5vh;
+                        padding-left: 10vw;
+                        clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%);
+                    }
+                }
+                .direita{
+                    grid-column: 2/6;
+                    margin-left: 8vw;
+                    display: flex;
+                    justify-content: end;
+                    .txt{
+                        padding-left: 2vw;
+                        top:2.5vw;
+                        right: 25vw;
+                        padding-right: 10vw;
+                        clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 50%);
+                    }
+                    img{
+                        position: relative;
+                    }
                 }
             }
+            #PlantaBaixa{
+                grid-row: 2;
+                padding-top: 20vh;
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .subtitulo{
+
+                    background-color: #ECF39E;
+                    width: max-content;
+                    padding: 3vw;   
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                }
+                #plantaLegendas{
+                    background-color: #132a13;
+                    border-radius: 1%;
+                    display: flex;
+                    width: 70vw;
+                    img{
+                        width: 40vw;
+                        border: 0.2vw solid #ECF39E;
+                        border-radius: 1%;
+                        margin: 1vw;
+                    }
+                    #Legendas{
+                        margin: 1vw;
+                        background-color: #90a955;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        justify-content: space-evenly;
+                        color: white;
+                        .legenda{
+                            padding-left: 2vw;
+                            display: flex;
+                            justify-content: space-between;
+                            #cor1{
+                                width: 2vw;
+                                height: 2vw;
+                                background-color: #FECD66;
+                                margin-right: 1vw;
+                            }
+                            #cor2{
+                                width: 2vw;
+                                height: 2vw;
+                                background-color: #5A57FE;
+                                margin-right: 1vw;
+                            }
+                            #cor3{
+                                width: 2vw;
+                                height: 2vw;
+                                background-color: #5DFDD1;
+                                margin-right: 1vw;
+                            }
+                            #cor4{
+                                width: 2vw;
+                                height: 2vw;
+                                background-color: #FF4343;
+                                margin-right: 1vw;
+                            }
+                            #cor5{
+                                width: 2vw;
+                                height: 2vw;
+                                background-color: black;
+                                margin-right: 1vw;
+                            }
+                        }
+                    }
+                }
+            }   
         }
     }
     footer{
